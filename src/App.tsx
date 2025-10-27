@@ -2772,10 +2772,10 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   };
 
   const exampleQueries: string[] = [
-    "Who are the top 5 creators by views?",
-    "List the posts with highest engagement rate",
+    "Show all posts with cost and engagement metrics for creator ",
+    "Show me all posts with their performance metrics",
     "Show me the trend in views for the top 2 highest watched posts over time",
-    "Give me all fields for post data for brand muscleblaze"
+    "Give me all fields for post data for brand wellcore.in"
   ];
 
   const handleExampleClick = (query: string): void => {
