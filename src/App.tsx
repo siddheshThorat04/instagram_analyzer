@@ -700,7 +700,7 @@
 //     }
 //   };
 
-//   const renderChart = (message: Message) => {
+//   const Chart = (message: Message) => {
 //     if (!message.chartData || !message.chartType) return null;
 
 //     const { data } = message.chartData;
@@ -2176,8 +2176,8 @@ export default function ChatInterface() {
   const [exportingIndex, setExportingIndex] = useState<number | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // const BACKEND_URL = 'http://localhost:3000';
-  const BACKEND_URL = 'https://sherlockbe2-0.onrender.com';
+  const BACKEND_URL = 'http://localhost:3000';
+  // const BACKEND_URL = 'https://sherlockbe2-0.onrender.com';
   const scrollToBottom = (): void => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -2773,7 +2773,9 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
   const exampleQueries: string[] = [
     "Show all posts with cost and engagement metrics for creator ",
-    "Give me all fields for post data for brand Wellcore"
+    "Give me the increase in views likes and comments between 13th to 30th October for creator Rohit Chauhan",
+    "What is the average engagement rate for posts with more than 1000 likes?",
+    "Give me all fields for post data for brand Wellversed"
   ];
 
   const handleExampleClick = (query: string): void => {
