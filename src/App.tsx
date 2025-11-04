@@ -2773,7 +2773,6 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
   const exampleQueries: string[] = [
     "Show all posts with cost and engagement metrics for creator ",
-    "Give me the increase in views likes and comments between 13th to 30th October for creator Rohit Chauhan",
     "What is the average engagement rate for posts with more than 1000 likes?",
     "Give me all fields for post data for brand Wellversed"
   ];
